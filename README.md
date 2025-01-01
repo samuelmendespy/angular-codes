@@ -1,14 +1,21 @@
-# angular-codes
- Angula code samples
+# Angular Code Samples
 
+This repository contains Angular sample projects based on a course. Each folder corresponds to specific course modules.
 
-Packages:
-- Node version v16.16.0 (LTS) + npm version 8.11.0 - https://nodejs.org/en/blog/release/v16.16.0
- 
-- Angular 13.3
+## Folder Structure
 
-To install the version @angular/cli@13 globally:
+- [Project BA ](project-ba): Angular project based on course modules 01-A to 04-K.
+- [Project Routing](project-routing): Angular project based on course modules 05-A to 05-F.
+
+## Requirements
+
+- **Node.js**: Version `16.16.0 (LTS)`  
+- **npm**: Version `8.11.0` (bundled with Node.js)
+- **Angular CLI**: Version `13.3`
+
+### Installing Angular CLI
+
+To install Angular CLI globally, use the following command:
+```bash
 npm install -g @angular/cli@13
-
-To start the server:
-ng serve
+```
