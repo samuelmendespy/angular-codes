@@ -1,0 +1,3 @@
+<h2>Component Interaction</h2>
+<h3>The surname is defined in the parent element (component) as:{{ children.name }} {{ surname }}</h3>
+<app-descendant-component [surname]="surname" (displayName)="showFullName($event)" #children></app-descendant-component>

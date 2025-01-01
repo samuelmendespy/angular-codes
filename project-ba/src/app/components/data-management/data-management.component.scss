@@ -1,0 +1,16 @@
+.data-management-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .save-data-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .load-data-container label {
+    cursor: pointer;
+  }
+  

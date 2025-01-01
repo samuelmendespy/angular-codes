@@ -1,0 +1,28 @@
+<div class="history-list-container">
+    <app-data-management [updateHistory]="updateHistory" (updateHistoryChange)="onUpdateHistoryChange($event)"></app-data-management>
+    <h3 class="history-title">Update History</h3>
+    <div class="history-table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Index -</th>
+                    <th>Description -</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let update of updateHistory; let i = index">
+                    <td>{{ i + 1 }}</td>
+                    <td>{{ update.message }}</td>
+                    <td>{{ update.date }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="new-entry-container">
+
+        <input type="text" [(ngModel)]="updateMessage" maxlength="50" placeholder="Set a description" />
+        
+        <button type="submit" (click)="saveUpdateMessage()">+ New log entry</button>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<h2>Bind</h2>
+<img [src]="imageFile" width="120" alt="Image with a number on the center">
+<p>Nome : {{ name | uppercase }}</p>
+<p>Nascimento : {{ birthDate | date: "dd/MM/YYYY" }}</p>
+<button (click)="showBirthDate()" type="button">Ver Aniversário</button>
+
+<button (click)="changeImage()" type="button">Mudar Imagem</button>
+<p>Property binding : ligando propriedades do DOM a valores no component.</p>
+<p>Event binding : captura eventos do DOM( ex: input) e chama um método do component.</p>
+<p>Two way binding: possibilita a sincronização bidirecional VM(view - model), as mudanças na view são refletidas no model e vice-versa.</p>
+<p>Interpolation: permite a exibição de valores dinâmicos do component no HTML.</p>
